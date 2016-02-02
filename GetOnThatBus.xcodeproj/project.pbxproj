@@ -12,6 +12,8 @@
 		DBD21B6A1C61632C00901062 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBD21B681C61632C00901062 /* Main.storyboard */; };
 		DBD21B6C1C61632C00901062 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBD21B6B1C61632C00901062 /* Assets.xcassets */; };
 		DBD21B6F1C61632C00901062 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBD21B6D1C61632C00901062 /* LaunchScreen.storyboard */; };
+		DBD21B771C61633E00901062 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBD21B761C61633E00901062 /* MapKit.framework */; };
+		DBD21B791C616A3300901062 /* BusStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD21B781C616A3300901062 /* BusStop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		DBD21B6B1C61632C00901062 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBD21B6E1C61632C00901062 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBD21B701C61632C00901062 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBD21B761C61633E00901062 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DBD21B781C616A3300901062 /* BusStop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBD21B771C61633E00901062 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +43,7 @@
 		DBD21B581C61632C00901062 = {
 			isa = PBXGroup;
 			children = (
+				DBD21B761C61633E00901062 /* MapKit.framework */,
 				DBD21B631C61632C00901062 /* GetOnThatBus */,
 				DBD21B621C61632C00901062 /* Products */,
 			);
@@ -56,6 +62,7 @@
 			children = (
 				DBD21B641C61632C00901062 /* AppDelegate.swift */,
 				DBD21B661C61632C00901062 /* ViewController.swift */,
+				DBD21B781C616A3300901062 /* BusStop.swift */,
 				DBD21B681C61632C00901062 /* Main.storyboard */,
 				DBD21B6B1C61632C00901062 /* Assets.xcassets */,
 				DBD21B6D1C61632C00901062 /* LaunchScreen.storyboard */,
@@ -136,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBD21B791C616A3300901062 /* BusStop.swift in Sources */,
 				DBD21B671C61632C00901062 /* ViewController.swift in Sources */,
 				DBD21B651C61632C00901062 /* AppDelegate.swift in Sources */,
 			);
