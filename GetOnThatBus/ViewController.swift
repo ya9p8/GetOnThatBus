@@ -12,7 +12,7 @@ import MapKit
 class ViewController: UIViewController, MKMapViewDelegate
 {
     @IBOutlet weak var mapView: MKMapView!
-    //var busStops:
+    var busStops:[BusStop] = [BusStop]()
     
 
     override func viewDidLoad()
@@ -33,6 +33,9 @@ class ViewController: UIViewController, MKMapViewDelegate
                 for dictionary in busStopArray
                 {
                     let busStop = BusStop(dictionary: dictionary as! NSDictionary)
+                    
+                    self.busStops.append(busStop)
+                    
                     self.mapView.addAnnotation(busStop.annotation)
                     
                 }
@@ -50,6 +53,23 @@ class ViewController: UIViewController, MKMapViewDelegate
         })
         task.resume()
 
+    }
+    
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView?
+    {
+        
+        let pin = MKPinAnnotationView(annotation: annotation, reuseIdentifier: nil)
+        pin.canShowCallout = true
+        pin.rightCalloutAccessoryView = UIButton(type: .DetailDisclosure)
+        
+        return pin
+        
+        
+    }
+    
+    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl)
+    {
+        print("Map pin tapped!")
     }
 
 
