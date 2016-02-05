@@ -36,5 +36,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>FOOLISH MORTAL! DIVULGE YOUR COORDINATES IMMEDIATELY OR FACE MY WRATH!</string>
 </dict>
 </plist>

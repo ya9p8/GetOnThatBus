@@ -14,6 +14,7 @@
 		DBD21B6F1C61632C00901062 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBD21B6D1C61632C00901062 /* LaunchScreen.storyboard */; };
 		DBD21B771C61633E00901062 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBD21B761C61633E00901062 /* MapKit.framework */; };
 		DBD21B791C616A3300901062 /* BusStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD21B781C616A3300901062 /* BusStop.swift */; };
+		DBD21B7B1C6250F700901062 /* BusStopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD21B7A1C6250F700901062 /* BusStopTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		DBD21B701C61632C00901062 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBD21B761C61633E00901062 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DBD21B781C616A3300901062 /* BusStop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStop.swift; sourceTree = "<group>"; };
+		DBD21B7A1C6250F700901062 /* BusStopTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStopTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				DBD21B661C61632C00901062 /* ViewController.swift */,
 				DBD21B781C616A3300901062 /* BusStop.swift */,
 				DBD21B681C61632C00901062 /* Main.storyboard */,
+				DBD21B7A1C6250F700901062 /* BusStopTableViewController.swift */,
 				DBD21B6B1C61632C00901062 /* Assets.xcassets */,
 				DBD21B6D1C61632C00901062 /* LaunchScreen.storyboard */,
 				DBD21B701C61632C00901062 /* Info.plist */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBD21B7B1C6250F700901062 /* BusStopTableViewController.swift in Sources */,
 				DBD21B791C616A3300901062 /* BusStop.swift in Sources */,
 				DBD21B671C61632C00901062 /* ViewController.swift in Sources */,
 				DBD21B651C61632C00901062 /* AppDelegate.swift in Sources */,

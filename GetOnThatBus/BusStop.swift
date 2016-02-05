@@ -20,21 +20,31 @@ class BusStop: NSObject
     var address:String
     var intermodalTransfer:String
     let annotation = MKPointAnnotation()
+    var annotationArray = [MKPointAnnotation]()
     
     init(dictionary:NSDictionary)
     {
-        longitude = (dictionary["longitude"] as! NSString).doubleValue
-        latitude = (dictionary["latitude"] as! NSString).doubleValue
+        longitude = (dictionary["location"]!["longitude"] as! NSString).doubleValue
+        latitude = (dictionary["location"]!["latitude"] as! NSString).doubleValue
         name = dictionary["cta_stop_name"]! as! String
         address = dictionary["_address"] as! String
         routes = dictionary["routes"] as! String
         annotation.coordinate = CLLocationCoordinate2DMake(latitude, longitude)
         annotation.title = name
+        annotation.subtitle = "Routes: "+routes
+        annotationArray.append(annotation)
         
         
-        if(dictionary["inter_modal"] != nil)
+        if dictionary["inter_modal"] != nil
         {
-            intermodalTransfer = dictionary["inter_modal"] as! String
+            if dictionary["inter_modal"] as! String == "Pace"
+            {
+                intermodalTransfer = "Pace"
+            }
+            else
+            {
+                intermodalTransfer = "Metra"
+            }
         }
         else
         {
